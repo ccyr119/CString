@@ -22,12 +22,12 @@ SOFTWARE.
 using System;
 using System.Collections.Generic;
 
-public class ArrayPool<T>
+public class CArrayPool<T>
 {
     public const int MAX_COUNT = 16;
     Queue<T[]>[] pool = new Queue<T[]>[MAX_COUNT];
 
-    public ArrayPool()
+    public CArrayPool()
     {
         for (int i = 0; i < MAX_COUNT; i++)
         {

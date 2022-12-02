@@ -33,7 +33,7 @@ public class CString : IDisposable
     const char DEFAULT_ALLOC_CHAR = (char)0xCCCC;
     const int DEFAULT_CAPACITY = 256;
 
-    static ArrayPool<char> pool = new ArrayPool<char>();
+    static CArrayPool<char> pool = new CArrayPool<char>();
     static Queue<CString> queue = new Queue<CString>();
     static Queue<CStringBlock> blocks = new Queue<CStringBlock>();
     static Stack<CStringBlock> stack = new Stack<CStringBlock>();

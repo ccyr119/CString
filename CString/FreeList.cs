@@ -10,7 +10,7 @@ public class FreeList<T> : IList<T>, IList, ICollection
     int _version;
 
     static readonly T[] EmptyArray = new T[0];
-    static ArrayPool<T> pool = new ArrayPool<T>();    
+    static CArrayPool<T> pool = new CArrayPool<T>();    
 
     public FreeList()
     {
